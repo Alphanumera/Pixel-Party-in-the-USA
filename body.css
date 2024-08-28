@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    font-family: 'IBMPlexMono-SemiBold.ttf', sans-serif;
+    background-color: #FF6F00; /* Orange background */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+}
+
+.header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    align-items: center;
+    width: 80%;
+    position: relative;
+}
+
+.nav {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.nav-item {
+    background-color: #E65100; /* Darker orange */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border: 2px solid #FF8C00; /* Lighter orange border */
+}
+
+.main-text {
+    text-align: center;
+}
+
+.main-text h1 {
+    font-family: ;
+    font-size: 3em;
+    color: white;
+
+}
+v 
+.main-text h2 {
+    font-family: IMBPlexMono-SemiBold;
+    font-size: 1.5em;
+    color: white;
+}
+
+.header::before,
+.header::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 20px;
+    height: 20px;
+    border: 2px solid #FF8C00;
+    border-radius: 50%;
+    background-color: #FF6F00;
+}
+
+.header::before {
+    left: -30px;
+}
+
+.header::after {
+    right: -30px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Press Start 2P', cursive;
+}
+
+
